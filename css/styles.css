@@ -116,6 +116,17 @@ textarea {
   color: white !important;
 }
 
+.button.is-denim {
+  background-color: #0b66c2 !important;
+  color: white !important;
+}
+
+.button.is-denim:hover {
+  background-color: white !important;
+  color: #0b66c2 !important;
+}
+
+
 .button.is-orange {
   background-color: #fc5d35 !important;
   color: white !important;

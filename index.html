@@ -27,11 +27,11 @@
           </a>
 
           <a
-            role="button"
+            role="button" id="burger"
             class="navbar-burger"
             aria-label="menu"
             aria-expanded="false"
-            data-target="navbarBasicExample"
+            data-target="navbar-menu"
           >
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
@@ -39,9 +39,8 @@
           </a>
         </div>
 
-        <div id="navbarBasicExample" class="navbar-menu">
+        <div id="navbar-menu" class="navbar-menu">
           <div class="navbar-start"></div>
-
           <div class="navbar-end">
             <div class="navbar-item">
               <a class="navbar-item" href="#carousel-section"> Hem</a>
@@ -366,9 +365,13 @@ Kontakta mig idag för att diskutera hur jag kan hjälpa dig och ditt företag a
 </html>
 
 <script>
-  bulmaCarousel.attach('#carousel-demo', {
-    initialSlide: 0,
-    slidesToScroll: 1,
-    slidesToShow: 1,
-  });
+// source: https://gist.github.com/Bradcomp/a9ef2ef322a8e8017443b626208999c1
+(function () {
+    var burger = document.querySelector('#burger');
+    var menu = document.querySelector('#' + burger.dataset.target);
+    burger.addEventListener('click', function () {
+        burger.classList.toggle('is-active');
+        menu.classList.toggle('is-active');
+    });
+})();
 </script>

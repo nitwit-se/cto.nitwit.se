@@ -152,12 +152,14 @@ textarea {
 
 .mobile-icon {
   width:128px !important;
+  max-width:128px !important;
 }
 
-@media (max-width:768px) {  
+@media (max-device-width:768px) {  
   .mobile-icon {
     margin-top: 20px;
     width:96px !important;
+    max-width:96px !important;
   }
 }
 

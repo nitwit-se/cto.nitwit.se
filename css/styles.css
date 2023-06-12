@@ -150,10 +150,14 @@ textarea {
 }
 
 
-@include mobile {
-  section {
-    padding-left: 15%;
-    padding-right: 15%;
+.mobile-icon {
+  max-width:128px;
+}
+
+@media (max-width:768px) {  
+  .mobile-icon {
+    margin-top: 20px;
+    max-width:96px !important;
   }
 }
 
